@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default class Fillimage extends React.Component<any> {
+export default class Fillimage extends React.Component<any, any> {
   static defaultProps = {
     keepOriginalImgSize: false,
     imgSize: 'cover',
@@ -21,9 +21,9 @@ export default class Fillimage extends React.Component<any> {
       style={{
         width: this.props.width,
         height: this.props.height,
-        backgroundImage: 'url(' + this.props.imgSrc + ')',
+        backgroundImage: `url(${this.props.imgSrc})`,
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: positionX + ' ' + positionY,
+        backgroundPosition: `${positionX} ${positionY}`,
         backgroundSize: bgSize,
         position: 'relative',
         ...this.props.style,

@@ -1,0 +1,41 @@
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes movePortret {
+  from {
+    position: relative;
+    left: 0%;
+  }
+  to {
+    position: relative;
+    left: 10%;
+  }
+}
+
+@keyframes moveLogo {
+  from {
+    margin-top: -254px;
+  }
+  to {
+    margin-top: calc(50vh - 197px);
+  }
+}
+
+@keyframes moveName {
+  from {
+    position: relative;
+    top: 50vh;
+    left: -100%;
+  }
+  to {
+    position: relative;
+    left: 0;
+    top: 0px;
+  }
+}
